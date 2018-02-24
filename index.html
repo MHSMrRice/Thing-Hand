@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Instructions for "Thing" hand
+        </title>
+    </head>
+    <body>
+        <h1>Instructions for "Thing" hand</h1>
+        <ol>
+            <img src='hand.jpg' width='33%' align='right'>
+            <li>
+                Check to see if Arduino is installed, and <a href='https://www.arduino.cc/en/Main/Software'>install if necessary</a>
+            </li>
+            <li>
+                Check to see if Arduino IDE has the Adafruit Feather 32u4 board included by looking in the "tools >> board" menu of 
+                the IDE. If the board is not included in your installation of the Arduino IDE (likely if you just installed it) then
+                you should follow <a href='https://learn.adafruit.com/adafruit-feather-32u4-basic-proto/setup'>these instructions from 
+                Adafruit.com</a> to include it.
+            </li>
+            <li>
+                Check to see if Arduino IDE has the Adafruit PWM/Servo Driver Library included by look in the "Files >> Examples" area 
+                of the menu to see if the library is already installed in the IDE. IF the Library is installed, you will see it named 
+                in that section of the menu. If the library is not included in your installation of the Arduino IDE (likely if you just 
+                installed it) then you should follow <a href='https://learn.adafruit.com/adafruit-16-channel-pwm-slash-servo-shield/using-the-adafruit-library'>
+                these instructions from Adafruit.com</a> to include it.
+            <li>
+                Next you should <a href='Thing_hand.ino'>open the arduino file</a> and connect the feather board to the computer. Be 
+                careful to make sure that you connect the 'Feather 32u4' board and not the PowerBoost 1000 Charge' board to the computer 
+                via microUSB. [Note: Some USB cables are just intended for charging, and don't have a data connection. Avoid These...]
+            </li>
+            <li>
+                At this point you can make any changes you would like to make to the code. Save the changed file with a new name (so as to
+                not to alter the original).
+            </li>
+            <li>
+                Make sure that the correct port is selected, and then upload (CTRL+U) the sketch to the Feather board. 
+            </li>
+            <li>
+                Open up the serial monitor (CTRL+SHIFT+M) and see the serial ouput from the board, if you are interested in debugging or 
+                checking up on things.
+            </li>
+        </ol>
+        <br>
+        <img src='circuits.jpg' width='60%'>
+    </body>
+</html>
